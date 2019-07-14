@@ -1,0 +1,11 @@
+<ul class="list-group" *ngIf="usersList.length">
+  <li
+    *ngFor="let user of usersList"
+    class="list-group-item"
+    [class.active]="user.isCurrent"
+    (dblclick)="selectUser(user)"
+    title="Click twice to select"
+  >
+    {{ user.name }}
+  </li>
+</ul>

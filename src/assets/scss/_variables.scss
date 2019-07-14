@@ -1,0 +1,13 @@
+$default-padding: 10px;
+
+%padding-left-right-shared {
+  padding: 0 $default-padding;
+}
+
+%padding-shared {
+  padding: $default-padding;
+}
+
+%height-shared {
+  height: 100%;
+}

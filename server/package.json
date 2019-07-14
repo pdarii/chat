@@ -1,0 +1,12 @@
+{
+  "name": "chat-backend",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}

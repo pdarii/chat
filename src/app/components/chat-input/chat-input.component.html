@@ -1,0 +1,21 @@
+<form [formGroup]="inputForm" (ngSubmit)="onSubmit()" novalidate>
+  <div class="input-group">
+    <input
+      type="text"
+      class="form-control"
+      formControlName="text"
+      placeholder="{{ config.placeholder }}"
+      required
+      #text
+    />
+    <div class="input-group-append">
+      <button
+        type="submit"
+        [disabled]="inputForm.pristine || inputForm.invalid"
+        class="btn btn-outline-secondary"
+      >
+        {{ config.buttonLabel }}
+      </button>
+    </div>
+  </div>
+</form>

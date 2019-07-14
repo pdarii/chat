@@ -1,0 +1,9 @@
+<ul class="message-list">
+  <li *ngFor="let message of messages" class="message-list-item">
+    <app-message [message]="message"></app-message>
+  </li>
+</ul>
+<chat-input
+  (onMessage)="handleMessage($event)"
+  [selectedUser]="selectedUser"
+></chat-input>
