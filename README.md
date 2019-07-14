@@ -1,22 +1,12 @@
-To install packages:
-
-# Chat UI
-
-    npm i
-
 # Chat Backend
 
     cd server
     npm i
-
-To run app:
-
-## Backend
-
     npm start
 
-## UI
+# Chat UI
 
-    npm run start-ui
+    npm i
+    npm start
 
 Enjoy!
